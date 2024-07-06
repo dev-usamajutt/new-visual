@@ -1,0 +1,153 @@
+:root{
+    --dark-color: #141414;
+    --primary-color:#e50914;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    font:'Ariel',sans-serif ;
+    background: black;
+    color: gray;
+}
+h1,h2,h3{
+    color: white;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+color: white;
+}
+img{
+    width:100%;
+}
+.showcase {
+    width: 100%;
+    height: 93vh;
+    position: relative;
+    background:url('https://i.ibb.co/vXqDmnh/background.jpg') no-repeat center center/cover;   
+     
+
+}
+.showcase::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.2);
+    box-shadow: inset 80px 60px 180px #000000, inset -80px -60px 180px #000000;
+}
+.navtop{
+    height:90px;
+    position: relative;
+   z-index: 2;
+}
+.navtop img{
+    width: 140px;
+    position:absolute;
+   top:5%;
+   left:45%;
+   margin-left:0;
+}
+.btn {
+	display: inline-block;
+	background: var(--primary-color);
+    position: absolute;
+    top:5px;
+    right: 2%;
+	color: #fff;
+	padding: 0.4rem 1.3rem;
+	font-size: 1rem;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	transition: opacity 0.2s ease-in;
+	outline: none;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+
+}
+
+.btn:hover {
+	opacity: 0.9;
+}
+.btn-rounded{
+    border-radius: 5px;
+}
+
+.btn-lg{
+    position:relative;
+    top:10%;
+
+    padding:10px;
+    background-color: red;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size:12px;
+}
+.showcase-content{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   top:20%;
+   z-index: 2;
+}
+.showcase-content h1{
+font-size: 3.2rem;
+font-weight: 700;
+    line-height:1.5;
+}
+.showcase-content p{
+    text-transform: uppercase;
+    line-height:2.5;
+    margin: 0 0 0.9rem;
+    color: lightgrey;
+}
+.showcase-content a{
+    background-color: red;
+    padding:10px 30px;
+    text-transform: uppercase;
+    line-height:2.5;
+}
+
+.all-tab{
+	background: var(--dark-color);
+    width: 100%;
+   border-bottom: 4px solid gray;
+ 
+}
+
+.tabs{
+    max-width:70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px; 
+}
+.tabs p{
+    padding-top: 10px;
+}
+.tabs div:hover {
+	color: #fff;
+	cursor: pointer;
+}
+
+.tab-border{
+    border-bottom: var( --primary-color) solid 4px;
+    }
+
+
+
